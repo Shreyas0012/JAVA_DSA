@@ -41,4 +41,7 @@ public class buynsell{
 //         int[]arr={5,3,1,2,7};
 //         System.out.println(stock(arr));
 //     }
-// }
+// }// Auto update: 11-01-2026 22:32:01.05
+// Auto update: 11-01-2026 22:42:42.48
+// Auto update: 11-01-2026 22:44:41.03
+// Auto update: 11-01-2026 22:47:55.13
