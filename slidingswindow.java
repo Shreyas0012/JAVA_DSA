@@ -1,5 +1,5 @@
 public class slidingswindow {
-    static int subarr(int[] arr,int k){
+    static int subArr(int[] arr,int k){
         int maxsum=0;
         int currentsum=0;
         for(int j=0;j<k;j++){
@@ -20,6 +20,6 @@ public class slidingswindow {
     public static void main(String[] args) {
         int []arr={1,2,4,6,2,3,6,8,9,9};
         int k=3;
-        System.out.println(subarr(arr,k));
+        System.out.println(subArr(arr,k));
     }
 }
