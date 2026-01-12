@@ -1,3 +1,4 @@
+// finds the missing number in a sorted array
 public class missingnumber {
 
     static int missingNumber(int[] arr, int n) {
