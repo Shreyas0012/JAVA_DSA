@@ -1,4 +1,5 @@
-import java.util.Arrays;
+// Dry run it u'll remmeber it
+import java.util.Arrays; 
 
 public class duplicates{
 
