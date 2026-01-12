@@ -1,3 +1,7 @@
+// this is named sliding window becuz the pointer acts as one ...
+// first it takes sum of first window and on second window it removes 
+// the first elemnt and adds the next element(k)
+
 public class slidingswindow {
     static int subArr(int[] arr,int k){
         int maxsum=0;
