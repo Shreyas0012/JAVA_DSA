@@ -1,3 +1,4 @@
+package Array;
 public class leader{
     static void leaders(int[]arr){
         int max=arr[arr.length-1];

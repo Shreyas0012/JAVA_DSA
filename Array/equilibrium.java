@@ -1,3 +1,4 @@
+package Array;
 // returns the value where both sides sum are equal
 public class equilibrium{
     static int equi(int[]arr){

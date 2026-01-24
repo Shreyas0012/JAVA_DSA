@@ -1,3 +1,4 @@
+package Array;
 // Dry run it u'll remmeber it
 import java.util.Arrays; 
 

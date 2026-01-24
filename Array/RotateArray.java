@@ -1,3 +1,4 @@
+package Array;
 public class RotateArray {
     static void rotate(int[] arr, int k) {
        int n=arr.length;

@@ -1,3 +1,4 @@
+package Array;
 // finds the missing number in a sorted array sequencially
 public class missingnumber {
 

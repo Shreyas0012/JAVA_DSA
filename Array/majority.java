@@ -1,3 +1,4 @@
+package Array;
 //  only works when the number of majority element is more than n/2
  
  public class majority {

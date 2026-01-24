@@ -1,3 +1,4 @@
+package Array;
 public class targetsum {
 
     static void twoSum(int[] arr, int target) {

@@ -1,3 +1,4 @@
+package Array;
 import java.util.Arrays;
 public class kpop{
     static void swap(int[]arr,int i,int j){

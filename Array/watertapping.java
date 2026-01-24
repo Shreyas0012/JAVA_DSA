@@ -1,3 +1,4 @@
+package Array;
 public class watertapping{
 static int bars(int[] arr) {
     int left = 0;

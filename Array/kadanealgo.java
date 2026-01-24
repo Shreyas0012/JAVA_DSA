@@ -1,3 +1,4 @@
+package Array;
 // we have to get the sum of subarr having max possible sum
 // adds the numbers checks every time if sum is less than 0 if no then check if >than max 
 public class kadanealgo{

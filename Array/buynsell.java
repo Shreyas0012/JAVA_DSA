@@ -1,3 +1,4 @@
+package Array;
 // its all about buying in less price and selling in highest
 public class buynsell{
     static int stock(int[]stock_prices){

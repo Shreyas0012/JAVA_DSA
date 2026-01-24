@@ -1,3 +1,4 @@
+package Array;
 public class mindifference{
     static void mindif(int[]arr){
        int currmin=arr[0];
