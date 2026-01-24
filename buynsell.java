@@ -1,3 +1,4 @@
+// its all about buying in less price and selling in highest
 public class buynsell{
     static int stock(int[]stock_prices){
         int max_profit=0;
@@ -41,4 +42,4 @@ public class buynsell{
 //         int[]arr={5,3,1,2,7};
 //         System.out.println(stock(arr));
 //     }
-// }
+// }// 
