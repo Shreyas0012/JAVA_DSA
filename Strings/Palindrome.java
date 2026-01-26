@@ -1,4 +1,4 @@
-public class Palindrome {
+public class Palindrome{
 
     static boolean isPalindrome(String str) {
         str = str.toLowerCase();

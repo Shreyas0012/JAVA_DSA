@@ -1,4 +1,4 @@
-public class Revering_String{
+public class Revering_String {
      String Reverse(String str){
         int n=str.length();
         String rev="";
