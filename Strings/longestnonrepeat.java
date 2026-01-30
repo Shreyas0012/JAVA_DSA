@@ -1,30 +1,25 @@
 public class longestnonrepeat {
 
-    static int longestUniqueSubstring(String s) {
+    static int longestnonrepeat(String s){
+    int[]freq=new int[26];
+        int maxlen=0;
+        int left=0;
+        for(int right=0;right<s.length();right++){
+           freq[s.charAt(right)-'a']++;
 
-        int[] freq = new int[26];   // frequency of characters
-        int left = 0;
-        int maxLen = 0;
-
-        for (int right = 0; right < s.length(); right++) {
-            char ch = s.charAt(right);
-            freq[ch - 'a']++;
-
-            // shrink window if character repeats
-            while (freq[ch - 'a'] > 1) {
-                freq[s.charAt(left) - 'a']--;
-                left++;
-            }
-
-            // update max length
-            maxLen = Math.max(maxLen, right - left + 1);
-        }
-
-        return maxLen;
+           while(freq[s.charAt(right)-'a']>1){
+            freq[s.charAt(left)-'a']--;
+            left++;
+           }
+        
+       
+         maxlen=Math.max(maxlen,right-left+1);
+        
     }
-
+    return maxlen;
+}
     public static void main(String[] args) {
-        String s = "abcabcbb";
-        System.out.println(longestUniqueSubstring(s)); // 3
+        String s = "cabccbcbb";
+        System.out.println(longestnonrepeat(s)); // 3
     }
 }
