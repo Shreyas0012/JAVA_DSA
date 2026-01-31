@@ -6,10 +6,12 @@ public class removeduplicates {
         System.out.println(str);
         for(int i=0;i<str.length();i++){
             char ch=str.charAt(i);
-            freq[ch-'a']++;
-            if(freq[ch-'a']==1){
+             
+
+            if(freq[ch-'a']==0){
                 res+=ch;
             }
+            freq[ch-'a']++;
             }
         System.out.println(res);
 
