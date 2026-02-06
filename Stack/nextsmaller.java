@@ -4,7 +4,7 @@ public class nextsmaller {
 
     static void previousGreater(int[] arr) {
      Stack<Integer> stack=new Stack<>();
-     for(int i=arr.length-1;i>=0;i--)
+     for(int i=0;i<arr.length;i++)
 {      while(!stack.empty() && stack.peek()>=arr[i]){
         stack.pop();
          }

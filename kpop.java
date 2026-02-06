@@ -1,29 +1,23 @@
-public class kpop{
-   static void longestnonrepeat(String str){
-       int count=1;
-       String res="";
-      for(int i=1;i<str.length();i++){
-         char ch=str.charAt(i);
-         if(ch==str.charAt(i-1)){
-           count++;
+import java.util.Stack;
+
+public class kpop {
+
+    static void previousGreater(int[] arr) {
+     Stack<Integer> stack=new Stack<>();
+     for(int i=arr.length-1;i>=0;i--)
+{      while(!stack.empty() && stack.peek()>=arr[i]){
+        stack.pop();
+         }
+         if(stack.isEmpty()){
+            System.out.println(arr[i]+"->"+-1);
          }
          else{
-           res+=str.charAt(i-1);
-           res+=count;
-           count=1;
+            System.out.println(arr[i]+"->"+stack.peek());
          }
-         if(i==str.length()-1){
-            res+=ch;
-            res+=count;
-         }
-      }
-      System.out.println(res);
-   }
-          public static void main(String[] args) {
-      String str="AAA";
-      longestnonrepeat(str);      }
+         stack.push(arr[i]);
+}        }
+            public static void main(String[] args) {
+        int[] arr = {100,20};
+        previousGreater(arr);
+    }
 }
-   
-
-
-
