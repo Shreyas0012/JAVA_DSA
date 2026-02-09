@@ -42,19 +42,16 @@ public class mergesort {
             }
             k++;
         }
-
         // copy remaining elements
         while (i < n1) {
             arr[k] = L[i];
             i++; k++;
         }
-
         while (j < n2) {
             arr[k] = R[j];
             j++; k++;
         }
     }
-
     public static void main(String[] args) {
         int[] arr = {5, 3, 4, 1};
         mergeSort(arr, 0, arr.length - 1);
