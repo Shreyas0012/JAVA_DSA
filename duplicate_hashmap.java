@@ -7,7 +7,7 @@ public class duplicate_hashmap {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for(int num : arr){
-            if(map.containsKey(num)){
+            if(!map.containsKey(num)){
                 System.out.println("Duplicate found: " + num);
                 
                 return;
