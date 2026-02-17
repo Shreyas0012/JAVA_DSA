@@ -1,3 +1,4 @@
+// hashmapping question to find the longest substring without repeating characters in a given string.
 import java.util.HashMap;
 
 public class longrstsubstring_hash {
