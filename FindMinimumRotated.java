@@ -7,17 +7,15 @@ public class FindMinimumRotated {
         while (low < high) {
             int mid = low + (high - low) / 2;
 
-            // Case 1: Minimum is in right half
+            
             if (arr[mid] > arr[high]) {
                 low = mid + 1;
             }
-            // Case 2: Minimum is in left half (including mid)
             else if (arr[mid] < arr[high]) {
                 high = mid;
             }
-            // Case 3: Duplicate case
             else {
-                high--;   // shrink search space
+                high--;   
             }
         }
 
