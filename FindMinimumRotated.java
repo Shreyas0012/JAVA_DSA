@@ -6,8 +6,6 @@ public class FindMinimumRotated {
 
         while (low < high) {
             int mid = low + (high - low) / 2;
-
-            
             if (arr[mid] > arr[high]) {
                 low = mid + 1;
             }
