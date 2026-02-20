@@ -7,15 +7,18 @@ public class numberofrotation_binary {
             if(arr[mid]>arr[high]){
                 low=mid+1;
             }
-            else{
+            else if(arr[mid]<arr[high]){
                 high=mid;
+            }
+            else{
+                high--;
             }
             }
         
         return low;
     }
     public static void main(String[] args) {
-        int[]arr={4,5,6,7,0,1,2};
+        int[]arr={10,10,10,1,10};
         int ans=numberofrotation(arr);
         System.out.println("Number of rotations: " + ans);
     }
