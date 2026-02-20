@@ -1,3 +1,4 @@
+
 public class FindMinimumRotated {
 
     static int findMin(int[] arr) {
@@ -22,7 +23,7 @@ public class FindMinimumRotated {
 
     public static void main(String[] args) {
 
-        int[] arr1 = {4,5,6,7,0,1,2};
+        int[] arr1 = {4,5,6,0,1,2,3};
         int[] arr2 = {2,2,2,0,1,2};
         int[] arr3 = {1,3,5};
 

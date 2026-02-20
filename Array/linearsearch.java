@@ -1,4 +1,4 @@
-package Array;
+
 // simple way to searcha an element in an array
 public class linearsearch {
     public static int linearSearch(int[] arr, int key) {

@@ -1,3 +1,4 @@
+
 public class firstoccerance_binary {
     static void first(int[]arr,int k){
         int ans=-1;

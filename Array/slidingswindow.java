@@ -1,4 +1,3 @@
-package Array;
 // this is named sliding window becuz the pointer acts as one ...
 // first it takes sum of first window and on second window it removes 
 // the first elemnt and adds the next element(k)

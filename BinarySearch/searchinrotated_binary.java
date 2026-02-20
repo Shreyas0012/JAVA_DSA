@@ -1,3 +1,4 @@
+
 public class searchinrotated_binary {
     static int search(int[]arr,int k){
         int low=0;

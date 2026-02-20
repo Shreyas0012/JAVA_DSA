@@ -4,6 +4,7 @@ public class numberofrotation_binary {
         int high=arr.length-1;
         while(low<high){
             int mid=low+(high-low)/2;
+            // left sorted
             if(arr[mid]>arr[high]){
                 low=mid+1;
             }
