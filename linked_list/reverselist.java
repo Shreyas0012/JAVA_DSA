@@ -10,7 +10,6 @@ public class reverselist {
         }
     }
 
-    // Reverse function
     static Node reverse(Node head) {
 
         Node prev = null;
@@ -27,10 +26,8 @@ public class reverselist {
             current = next;             // 4️⃣ Move current forward
         }
 
-        return prev;   // prev becomes new head
-    }
+        return prev;  }
 
-    // Print function
     static void printList(Node head) {
         Node temp = head;
         while (temp != null) {
@@ -42,7 +39,7 @@ public class reverselist {
 
     public static void main(String[] args) {
 
-        // Create list: 10 → 30 → 50
+        
         Node head = new Node(10);
         Node second = new Node(30);
         Node third = new Node(50);
