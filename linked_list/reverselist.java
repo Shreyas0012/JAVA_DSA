@@ -1,58 +1,45 @@
 public class reverselist {
-
-    static class Node {
+   static class node{
         int data;
-        Node next;
-
-        Node(int data) {
-            this.data = data;
-            this.next = null;
-        }
+        node next;
+        node(int data){
+            this.data=data;
+            this.next=null;
     }
-
-    static Node reverse(Node head) {
-
-        Node prev = null;
-        Node current = head;
-
-        while (current != null) {
-
-            Node next = current.next;   // 1️⃣ Save next node
-
-            current.next = prev;        // 2️⃣ Reverse pointer
-
-            prev = current;             // 3️⃣ Move prev forward
-
-            current = next;             // 4️⃣ Move current forward
+}
+    static node reverse(node head){
+        node prev=null;
+        node current=head;
+        while(current!=null){
+            node next=current.next;
+            current.next=prev;
+            prev=current;
+            current=next;
         }
-
-        return prev;  }
-
-    static void printList(Node head) {
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.data + " → ");
-            temp = temp.next;
-        }
-        System.out.println("null");
+        return prev;
     }
+    static void print(node head){
+        node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data+" → ");
+            temp=temp.next;
+        }
 
+    }
     public static void main(String[] args) {
-
-        
-        Node head = new Node(10);
-        Node second = new Node(30);
-        Node third = new Node(50);
-
-        head.next = second;
-        second.next = third;
-
+        node head=new node(10);
+        node second=new node(30);
+        node third=new node(50);
+        node fourth=new node(70);
+        node fifth=new node(90);
+        head.next=second;
+        second.next=third;
+        third.next=fourth;
+        fourth.next=fifth;
         System.out.println("Original List:");
-        printList(head);
-
-        head = reverse(head);
-
-        System.out.println("Reversed List:");
-        printList(head);
+        print(head);
+        head=reverse(head);
+        System.out.println("\nReversed List:");
+        print(head);
     }
 }
