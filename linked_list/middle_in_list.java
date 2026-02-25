@@ -15,10 +15,10 @@ public class middle_in_list {
         node slow = head;
 
         while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
+            slow = slow;
+            fast = fast.next;
         }
-
+        System.out.println("Middle element is: " + slow.data);
         return slow;
     }
 
@@ -28,16 +28,12 @@ public class middle_in_list {
         node b = new node(20);
         node c = new node(30);
         node d = new node(40);
-
-        a.next = b;
+        node e = new node(50);
+        a.next=b;
         b.next = c;
         c.next = d;
+        d.next =e;
 
-        node temp = middle(a);
-
-        while (temp != null) {
-            System.out.print(temp.data + " → ");
-            temp = temp.next;
-        }
+        middle(a);
     }
 }
