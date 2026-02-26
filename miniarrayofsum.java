@@ -8,9 +8,9 @@ public class miniarrayofsum {
 
         for (int right = 0; right < arr.length; right++) {
 
-            sum += arr[right];   // expand window
+            sum += arr[right];   
 
-            // shrink window while condition satisfied
+           
             while (sum >= target) {
                 minLength = Math.min(minLength, right - left + 1);
                 sum -= arr[left];
