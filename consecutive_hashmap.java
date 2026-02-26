@@ -14,7 +14,7 @@ public class consecutive_hashmap {
 
         for (int num : set) {
 
-            // only start if it's beginning of sequence
+           
             if (!set.contains(num - 1)) {
 
                 int current = num;
