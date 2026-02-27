@@ -6,21 +6,19 @@ public class tasksceduler {
 
         HashMap<Character, Integer> map = new HashMap<>();
 
-        // Count frequency
+       
         for (char task : tasks) {
             map.put(task, map.getOrDefault(task, 0) + 1);
         }
 
         int maxFreq = 0;
 
-        // Find max frequency
         for (int freq : map.values()) {
             maxFreq = Math.max(maxFreq, freq);
         }
 
         int maxCount = 0;
 
-        // Count how many tasks have max frequency
         for (int freq : map.values()) {
             if (freq == maxFreq) {
                 maxCount++;
