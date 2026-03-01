@@ -1,3 +1,4 @@
+// very important question
 import java.util.Arrays;
 public class longestconsecutivenumber {
     static int longs(int[] arr){
