@@ -1,3 +1,4 @@
+// important hashmap question
 import java.util.HashSet;
 
 public class consecutive_hashmap {
