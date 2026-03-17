@@ -1,4 +1,4 @@
-
+// simple two for loop method one puts the values in the hashmap and another print the ones with frequecy one
 import java.util.HashMap;
 
 public class appearonce{
