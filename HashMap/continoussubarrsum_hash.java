@@ -12,7 +12,7 @@ public class continoussubarrsum_hash {
             sum += arr[i];
 
             if(sum == k){
-                return true;;
+                return true;
             }
 
             if(map.containsKey(sum - k)){
